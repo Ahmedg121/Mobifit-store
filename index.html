@@ -1,247 +1,105 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mobility - MobiFit Store</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MobiFit Store</title>
   <style>
-    /* الخطوط والألوان */
-    @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
-
     body {
-      margin: 0;
-      font-family: 'Cairo', sans-serif;
-      background: #f7f7f7;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f8f8f8;
       color: #222;
-      direction: rtl;
-      line-height: 1.5;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
     }
-
     header {
-      background: #0a5f5f;
+      background: #4a0072;
       color: white;
-      padding: 1rem 1.5rem;
+      padding: 20px;
       text-align: center;
-      font-size: 1.8rem;
-      font-weight: 700;
-      letter-spacing: 2px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
-
-    .container {
-      max-width: 1000px;
-      margin: 1.5rem auto;
-      padding: 0 1rem;
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-      gap: 1.5rem;
-    }
-
     .product {
       background: white;
+      margin: 20px auto;
+      padding: 15px;
+      max-width: 800px;
       border-radius: 10px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
-
     .product img {
       width: 100%;
-      object-fit: cover;
-      height: 200px;
+      border-radius: 8px;
+      margin-bottom: 15px;
     }
-
-    .product-content {
-      padding: 1rem;
-      flex-grow: 1;
-    }
-
-    .product-title {
-      font-size: 1.3rem;
-      margin-bottom: 0.3rem;
-      color: #0a5f5f;
-      font-weight: 700;
-    }
-
-    .product-desc {
-      font-size: 0.9rem;
-      margin-bottom: 0.8rem;
-      white-space: pre-line;
-      color: #444;
-    }
-
-    .price {
-      font-weight: 700;
-      font-size: 1.2rem;
-      margin-bottom: 0.8rem;
-      color: #d14836;
-    }
-
-    .buttons {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-bottom: 1rem;
-    }
-
-    .btn {
-      flex-grow: 1;
-      padding: 0.6rem 1rem;
-      border: none;
-      border-radius: 25px;
-      font-size: 1rem;
-      cursor: pointer;
-      font-weight: 600;
-      color: white;
-      background: #0a5f5f;
-      transition: background-color 0.3s ease;
-      text-decoration: none;
-      text-align: center;
-      display: inline-block;
-    }
-
-    .btn:hover {
-      background: #095252;
-    }
-
     footer {
-      margin-top: 2rem;
-      padding: 1rem;
       text-align: center;
-      color: #666;
-      font-size: 0.9rem;
+      padding: 20px;
+      background: #eee;
+      font-size: 14px;
+      margin-top: 40px;
     }
-
-    /* روابط القناة */
-    .whatsapp-link {
-      display: inline-block;
-      margin-top: 0.5rem;
-      background: #25d366;
-      color: white;
-      padding: 0.4rem 0.8rem;
-      border-radius: 20px;
-      font-weight: 700;
-      text-decoration: none;
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 500px) {
-      header {
-        font-size: 1.4rem;
-        padding: 0.8rem 1rem;
-      }
-      .btn {
-        font-size: 0.9rem;
-        padding: 0.5rem 0.8rem;
-      }
+    h2 {
+      color: #4a0072;
     }
   </style>
 </head>
 <body>
 
-  <header>Mobility – MobiFit Store | متجر أيمن</header>
+  <header>
+    <h1>متجر MobiFit</h1>
+    <p>أحدث مستلزمات الموبايلات – عروض قوية وأسعار منافسة</p>
+  </header>
 
-  <div class="container">
-    <div class="products">
+  <section class="product">
+    <img src="charger.jpg" alt="شاحن DC 12 في 1">
+    <h2>⚡ شاحن DC 12 في 1 – السرعة والقوة في مكان واحد!</h2>
+    <p>
+      ✔ جهاز واحد بيعمل ليك 12 خدمة!<br>
+      ✔ 8 منافذ USB سريعة – تشحن بيها أي موبايل أو جهاز تاني في وقت وجيز<br>
+      ✔ فيه إضاءة LED قوية – تنور ليك المكان لو الظلمة لعبت دورها<br>
+      ✔ تصميمه عملي ومناسب للبيت، العربية، أو حتى الرحلات<br>
+      ✔ يشتغل بي بطاريات أو طاقة شمسية – ما محتاج كهرباء!
+    </p>
+    <p>
+      💰 السعر: <strong>12,000 جنيه</strong><br>
+      📞 0904137953
+    </p>
+  </section>
 
-      <!-- المنتج 1 -->
-      <div class="product">
-        <img src="https://i.imgur.com/nOogZzK.jpg" alt="شاحن DC 12 في 1" />
-        <div class="product-content">
-          <h2 class="product-title">⚡ شاحن DC 12 في 1 – السرعة والقوة في مكان واحد!</h2>
-          <p class="product-desc">
-✔ جهاز واحد بيعمل ليك 12 خدمة!
-✔ 8 منافذ USB سريعة – تشحن بيها أي موبايل أو جهاز تاني في وقت وجيز
-✔ فيه إضاءة LED قوية – تنور ليك المكان لو الظلمة لعبت دورها
-✔ تصميمه عملي ومناسب للبيت، العربية، أو حتى الرحلات
-✔ يشتغل بي بطاريات أو طاقة شمسية – ما محتاج كهرباء!
+  <section class="product">
+    <img src="superx.jpg" alt="استيكر حماية Super X">
+    <h2>🌟 Super X – الحماية الأقوى لشاشتك!</h2>
+    <p>
+      ✔ زجاج مقوّى يتحمّل الصدمات والخدوش<br>
+      ✔ لمس ناعم زي الشاشة الأصلية<br>
+      ✔ ما بعلق بصمة ولا زيت<br>
+      ✔ متوفر لمعظم الأجهزة (آيفون، سامسونج، شاومي...)<br>
+    </p>
+    <p>
+      💰 السعر: <strong>1,500 – 2,000 جنيه</strong><br>
+      📞 0904137953
+    </p>
+  </section>
 
-📞 للطلب: 0904137953
-          </p>
-          <div class="price">السعر: 12,000 جنيه</div>
-          <div class="buttons">
-            <a class="btn" href="tel:0904137953">اتصل الآن</a>
-            <a class="btn whatsapp-link" href="https://whatsapp.com/channel/0029VbB03435Ejy6DPTBAu0O" target="_blank" rel="noopener">قناة واتساب</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- المنتج 2 -->
-      <div class="product">
-        <img src="https://i.imgur.com/hsyTQ9b.jpg" alt="استيكر حماية Super X" />
-        <div class="product-content">
-          <h2 class="product-title">🌟 Super X - استيكر حماية شاشة</h2>
-          <p class="product-desc">
-✔ زجاج مقوّى يتحمّل الصدمات والخدوش  
-✔ لمس ناعم زي الشاشة الأصلية  
-✔ ما بعلق بصمة ولا زيت  
-✔ مقاسات مضبوطة تناسب أغلب الأجهزة
-
-📞 للطلب: 0904137953
-          </p>
-          <div class="price">الأسعار: 1,500 – 2,000 جنيه سوداني</div>
-          <div class="buttons">
-            <a class="btn" href="tel:0904137953">اتصل الآن</a>
-            <a class="btn whatsapp-link" href="https://whatsapp.com/channel/0029VbB03435Ejy6DPTBAu0O" target="_blank" rel="noopener">قناة واتساب</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- المنتج 3 -->
-      <div class="product">
-        <img src="https://i.imgur.com/8yrdDVu.jpg" alt="جراب AirPods Pro الجلدي" />
-        <div class="product-content">
-          <h2 class="product-title">🎧 جراب AirPods Pro الجلدي الأصلي</h2>
-          <p class="product-desc">
-جلد راقٍ بملمس ناعم  
-مقاوم للبصمات والخدوش  
-يخفف السقوط  
-فتحة شحن بدون فك الجراب  
-مع خطاف لتعليقه
-
-📞 للطلب: 0904137953
-          </p>
-          <div class="price">السعر: 3,000 جنيه</div>
-          <div class="buttons">
-            <a class="btn" href="tel:0904137953">اتصل الآن</a>
-            <a class="btn whatsapp-link" href="https://whatsapp.com/channel/0029VbB03435Ejy6DPTBAu0O" target="_blank" rel="noopener">قناة واتساب</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- المنتج 4 -->
-      <div class="product">
-        <img src="https://i.imgur.com/yGx4wLu.jpg" alt="سماعات AirPods Pro الأصلية" />
-        <div class="product-content">
-          <h2 class="product-title">🎧 AirPods Pro الأصلية – موديل A2083 / A2084</h2>
-          <p class="product-desc">
-سماعات خفيفة ومريحة مع عزل الضوضاء ANC  
-مقاومة للموية IPX4  
-بطارية تصل لـ 24 ساعة مع العلبة  
-توافق عالي مع Apple و Android  
-مكالمات واضحة مع عزل صوت الخلفية
-
-📞 للطلب: 0904137953
-          </p>
-          <div class="price">السعر: 15,000 جنيه</div>
-          <div class="buttons">
-            <a class="btn" href="tel:0904137953">اتصل الآن</a>
-            <a class="btn whatsapp-link" href="https://whatsapp.com/channel/0029VbB03435Ejy6DPTBAu0O" target="_blank" rel="noopener">قناة واتساب</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
+  <section class="product">
+    <img src="airpods.jpg" alt="سماعات AirPods Pro">
+    <h2>🎧 AirPods Pro – تجربة صوت لا تُضاهى</h2>
+    <p>
+      ✔ عزل ضوضاء نشط + وضع الشفافية<br>
+      ✔ بطارية تصمد أكثر من 24 ساعة مع العلبة<br>
+      ✔ شحن لاسلكي + مقاومة للعرق والموية<br>
+      ✔ متوافقة مع أجهزة Apple و Android<br>
+    </p>
+    <p>
+      💰 السعر: <strong>15,000 جنيه</strong><br>
+      📞 0904137953<br>
+      🧑‍💼 إدارة: <strong>أيمن شوقي</strong>
+    </p>
+  </section>
 
   <footer>
-    © 2025 MobiFit Store - متجر أيمن | كل الحقوق محفوظة
+    تصميم: <strong>أحمد جلال</strong> – 2025 ©
   </footer>
 
 </body>
